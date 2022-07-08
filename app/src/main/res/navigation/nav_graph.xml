@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/heroeListFragment">
+
+    <fragment
+        android:id="@+id/heroeAddFragment"
+        android:name="br.com.zup.marvel.ui.heroeadd.view.HeroeAddFragment"
+        android:label="Adicionar"
+        tools:layout="@layout/fragment_heroe_add" />
+    <fragment
+        android:id="@+id/heroeListFragment"
+        android:name="br.com.zup.marvel.ui.heroelist.view.HeroeListFragment"
+        android:label="Marvel"
+        tools:layout="@layout/fragment_heroe_list" >
+        <action
+            android:id="@+id/action_heroeListFragment_to_heroeDetailFragment"
+            app:destination="@id/heroeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heroeDetailFragment"
+        android:name="br.com.zup.marvel.ui.heroedetail.view.HeroeDetailFragment"
+        android:label="Detalhe"
+        tools:layout="@layout/fragment_heroe_detail" />
+</navigation>

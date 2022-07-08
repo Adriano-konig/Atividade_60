@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.heroeadd.view.HeroeAddFragment">
+
+    <EditText
+        android:id="@+id/etNomeHeroe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Nome Heroe"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etMovieDirectorInfoAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Detalhe"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeHeroe"
+        app:layout_constraintStart_toStartOf="@+id/etNomeHeroe"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeHeroe" />
+
+    <Button
+        android:id="@+id/bvSaveHeroe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:text="Salva"
+        app:layout_constraintEnd_toEndOf="@+id/etMovieDirectorInfoAdd"
+        app:layout_constraintStart_toStartOf="@+id/etMovieDirectorInfoAdd"
+        app:layout_constraintTop_toBottomOf="@+id/etMovieDirectorInfoAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
